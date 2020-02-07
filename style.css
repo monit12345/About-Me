@@ -1,0 +1,122 @@
+body{
+	background-image: linear-gradient(to right,#d9a7c7,#fffcdc);
+}
+.container{
+	max-width: 80%;
+	margin: auto;
+	line-height: 2em;
+}
+
+.head{
+	display: flex;
+
+}
+
+.profilepic{
+	height: 300px;
+	width: 300px;
+	margin-left: 0px;
+	border-top-left-radius: 50%;
+	border-bottom-right-radius: 50%;
+	margin-bottom: 20px;
+	transition-property: transform;
+	transition-duration: 1s;
+	margin-top: 50px;
+	position: relative;
+	animation: profilepic;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-out;
+}
+@keyframes profilepic{
+	0%	 {left:-1000px;}
+	100% {left: 0px;}
+}
+
+.boutme{
+	margin-left: 50px; 
+	margin-top: 30px;
+	margin-bottom: 50px;
+	padding-left: 20px; 
+	font-size: 25px;
+	font-family: Georgia, serif;
+	border-left: 2px black	solid;
+	text-align: justify-all;
+	color: #97530F;
+	position: relative;
+	animation: boutme;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-out;
+}
+@keyframes boutme{
+	0%    {right: -1500px}
+	100%  {right:0px}
+}
+
+.logos{
+	margin-left: 100px;
+}
+
+#l{
+	display: flex;
+	margin-bottom: 100px;
+
+}
+.ll{
+	flex: 1;
+	margin-right:375px;
+	margin-left: 200px;
+	border-radius: 50%;
+	transition-property: transform;
+	transition-duration: 1s;
+	content: none;
+	position: relative;
+	animation: profilepic;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-out;
+
+}
+.rl{
+	flex: 1;
+	margin-right: 350px;
+	border-radius: 50%;
+	transition-property: transform;
+	transition-duration: 1s;
+	position: relative;
+	animation: boutme;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-out;
+}
+.rl:hover {
+  box-shadow: 0 0 10px 5px rgba(0, 140, 186, 0.5);
+  transform: rotateY(180deg);
+}
+.ll:hover {
+  box-shadow: 0 0 10px 5px rgba(0, 140, 186, 0.5);
+  transform: rotateY(180deg);
+}
+
+img {
+  max-width: 80%;
+  height: auto;
+  box-shadow: 0 40px 80px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.profilepic:hover {
+	transform: rotateY(360deg);
+}
+a{
+	text-decoration: none;
+	color:#97530F;
+}
+
+#surprise:hover span {
+	display: none;
+}
+#surprise:hover:before {
+	content: "I AM";
+	text-decoration:underline;
+}
